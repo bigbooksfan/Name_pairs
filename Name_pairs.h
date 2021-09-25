@@ -15,7 +15,14 @@ public:
 
 	void sort();					// alphabetic name, ages follow
 
+	string get_name(int id);
+	int get_age(int id);
 
+	int s;
+
+	friend ostream& operator<<(ostream& os, Name_pairs l);
+	friend bool operator== (const Name_pairs& l1, const Name_pairs& l2);
+	friend bool operator!= (const Name_pairs& l1, const Name_pairs& l2);
 
 private:
 

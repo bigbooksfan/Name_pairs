@@ -7,6 +7,8 @@
 using namespace std;
 Name_pairs list1;
 
+
+
 int main() {
 
 	srand(time(0));
@@ -15,12 +17,18 @@ int main() {
 
 	list1.read_ages();
 	
-	list1.print();
+	cout << list1;
 	
 	cout << "\nSORT\n\n";
 
 	list1.sort();
 
-	list1.print();
+	cout << list1;
 	
+	Name_pairs list2 = list1;
+
+	if (list1 == list2) cout << "\nEQUAL";
+	if (list1 != list2) cout << "\nNOT EQUAL";
+
 }
+
